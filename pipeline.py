@@ -11,7 +11,7 @@ def validate_op():
     import os
     import boto3
 
-    REPO = "https://github.com/TCS-Edu-MLOps-0626/mlops-core-project.git"
+    REPO = "https://github.com/gagangoyal83/mlops-core-project.git"
 
     os.system(f"git clone {REPO}")
 
@@ -23,7 +23,7 @@ def validate_op():
     )
 
     s3.download_file(
-        "loksai-edu-mlproject1",
+        "tcs-mlops-project",
         "reviews.csv",
         "mlops-core-project/data/raw/reviews.csv"
     )
@@ -42,7 +42,7 @@ def preprocess_op():
     import os
     import boto3
 
-    REPO = "https://github.com/TCS-Edu-MLOps-0626/mlops-core-project.git"
+    REPO = "https://github.com/gagangoyal83/mlops-core-project.git"
 
     os.system(f"git clone {REPO}")
 
@@ -54,7 +54,7 @@ def preprocess_op():
     )
 
     s3.download_file(
-        "loksai-edu-mlproject1",
+        "tcs-mlops-project",
         "reviews.csv",
         "mlops-core-project/data/raw/reviews.csv"
     )
@@ -73,7 +73,7 @@ def train_op():
     import os
     import boto3
 
-    REPO = "https://github.com/TCS-Edu-MLOps-0626/mlops-core-project.git"
+    REPO = "https://github.com/gagangoyal83/mlops-core-project.git"
 
     os.system(f"git clone {REPO}")
 
@@ -85,7 +85,7 @@ def train_op():
     )
 
     s3.download_file(
-        "loksai-edu-mlproject1",
+        "tcs-mlops-project",
         "reviews.csv",
         "mlops-core-project/data/raw/reviews.csv"
     )
